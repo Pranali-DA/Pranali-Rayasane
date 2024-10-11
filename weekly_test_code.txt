@@ -1,0 +1,74 @@
+HP@LAPTOP-MN3SF1O9 MINGW64 /e/git version (master)
+$ cd "E:\git version\weekly text"
+
+HP@LAPTOP-MN3SF1O9 MINGW64 /e/git version/weekly text (master)
+$ pwd
+/e/git version/weekly text
+
+HP@LAPTOP-MN3SF1O9 MINGW64 /e/git version/weekly text (master)
+$ git init
+Initialized empty Git repository in E:/git version/weekly text/.git/
+
+HP@LAPTOP-MN3SF1O9 MINGW64 /e/git version/weekly text (master)
+$ touch first.txt
+
+HP@LAPTOP-MN3SF1O9 MINGW64 /e/git version/weekly text (master)
+$ git add first.txt
+
+HP@LAPTOP-MN3SF1O9 MINGW64 /e/git version/weekly text (master)
+$ git commit -m "adding first.txt"
+[master (root-commit) 007de33] adding first.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 first.txt
+
+HP@LAPTOP-MN3SF1O9 MINGW64 /e/git version/weekly text (master)
+$ git log
+commit 007de330fd377c46609806a0f114e401d7f8c9a0 (HEAD -> master)
+Author: Pranali-DA <pranalirayasane@gmail.com>
+Date:   Sun Oct 6 16:53:23 2024 +0530
+
+    adding first.txt
+
+HP@LAPTOP-MN3SF1O9 MINGW64 /e/git version/weekly text (master)
+$ touch second.txt
+
+HP@LAPTOP-MN3SF1O9 MINGW64 /e/git version/weekly text (master)
+$ git add second.txt
+
+HP@LAPTOP-MN3SF1O9 MINGW64 /e/git version/weekly text (master)
+$ git commit -m "adding second.txt"
+[master 0274488] adding second.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 second.txt
+
+HP@LAPTOP-MN3SF1O9 MINGW64 /e/git version/weekly text (master)
+$ rm first.txt
+
+HP@LAPTOP-MN3SF1O9 MINGW64 /e/git version/weekly text (master)
+$ git add first.txt
+
+HP@LAPTOP-MN3SF1O9 MINGW64 /e/git version/weekly text (master)
+$ git commit -m "removing first.txt"
+[master 19e3d0e] removing first.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 first.txt
+
+HP@LAPTOP-MN3SF1O9 MINGW64 /e/git version/weekly text (master)
+$ git log
+commit 19e3d0e63b2a886961c559d97f442d69aa432b1f (HEAD -> master)
+Author: Pranali-DA <pranalirayasane@gmail.com>
+Date:   Sun Oct 6 17:33:05 2024 +0530
+
+    removing first.txt
+
+commit 02744880c496351c996f2eac9f2a4c1c05a9beb9
+Author: Pranali-DA <pranalirayasane@gmail.com>
+Date:   Sun Oct 6 16:54:20 2024 +0530
+
+    adding second.txt
+
+commit 007de330fd377c46609806a0f114e401d7f8c9a0
+Author: Pranali-DA <pranalirayasane@gmail.com>
+Date:   Sun Oct 6 16:53:23 2024 +0530
+
+    adding first.txt
